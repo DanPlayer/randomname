@@ -1,1 +1,1 @@
-module randomname
+module github.com/DanPlayer/randomname
