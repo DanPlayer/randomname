@@ -9,7 +9,7 @@ import (
 func GenerateName() string {
 	var name string
 	rand.Seed(time.Now().UnixNano())
-	selectedType := RandomType(rand.Intn(1))
+	selectedType := RandomType(rand.Intn(2))
 	switch selectedType {
 	case AdjectiveAndPerson:
 		name = AdjectiveSlice[rand.Intn(AdjectiveSliceCount)] + PersonSlice[rand.Intn(PersonSliceCount)]
